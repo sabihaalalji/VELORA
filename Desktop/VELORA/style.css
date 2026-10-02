@@ -2,3 +2,9 @@ body {background-color: antiquewhite;color: brown; font-family: Georgia, 'Times 
 ul {list-style: none; display: flex; gap: 40px;padding: 20px 50px;
     align-items: center;}
     .logo {font-size: xx-large; font-weight: 700; letter-spacing: 3px;}
+    ul {display: flex; justify-content: space-between;}
+    .logo {margin-right: auto;}
+    li{font-size: smaller; font-weight: 300;letter-spacing: 2px;}
+    a {color: brown; list-style: none; text-decoration: none; 
+    
+} a:hover {color: #6B1E2E;}
