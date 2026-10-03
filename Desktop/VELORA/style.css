@@ -79,5 +79,35 @@ button {
   transition: 0.3s ease;
   padding: 3px;
   border-radius: 5px;
-  
-} button:hover  {background-color: #4F1622; transform: translateY(2px);}
+}
+button:hover {
+  background-color: #4f1622;
+  transform: translateY(2px);
+}
+.actualimage {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.featured {
+  text-align: center;
+  padding: 80px 50px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.images {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.product-card {
+  background-color: #e8d3ba;
+  color: #4a2c24;
+  border-color: #c9ad91;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+} .prices {color: #4A2C24; text-align: center; font-size: 18px;}
+.rating {color: #6B1E2E; text-align: center; letter-spacing: 2px;}
+.product-card:hover {transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18); transition: transform 0.3s ease, box-shadow 0.3s ease;}
