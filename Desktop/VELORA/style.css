@@ -1,5 +1,10 @@
+:root {--background: antiquewhite;--card: #e8d3ba; --text: #4a2c24;
+--border: #c9ad91;
+--accent: #6b1e2e;
+--accent-hover: #4f1622;
+--shadow: 0 8px 20px rgba(0, 0, 0, 0.12);}
 body {
-  background-color: antiquewhite;
+  background-color: var(--background);
   color: brown;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
@@ -176,3 +181,30 @@ select {
 #cart-sidebar:target {
   display: block;
 }.bag { text-align: center; color: #4a2c24; letter-spacing: 2px;}
+@media (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Hero {
+    flex-direction: column;
+  }
+
+  .Hero div {
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cart {
+    width: 100%;
+  }
+  ul {
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+}
