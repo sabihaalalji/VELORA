@@ -15,6 +15,7 @@
         <li><a href="#">MEN</a></li>
         <li><a href="#">COLLECTIONS</a></li>
         <li><a href="#">LOOKBOOK</a></li>
+        <li><a href="#cart-sidebar">CART</a></li>
       </ul>
     </nav>
 
@@ -36,29 +37,29 @@
     <section class="featured">
       <h1>THE VELORA COLLECTION</h1>
       <p>Timeless pieces, selected for every occasion.</p>
-      <div class="filters">
-</div> <label for="category">Category</label>
+      <div class="filters"></div>
+      <label for="category">Category</label>
 
-<select id="category">
-  <option>All</option>
-  <option>Women</option>
-  <option>Men</option>
-  <option>Accessories</option>
-</select>
-<label for="sort">Sort by</label>
+      <select id="category">
+        <option>All</option>
+        <option>Women</option>
+        <option>Men</option>
+        <option>Accessories</option>
+      </select>
+      <label for="sort">Sort by</label>
 
-<select id="sort">
-  <option>Featured</option>
-  <option>Price: Low to High</option>
-  <option>Price: High to Low</option>
-</select>
+      <select id="sort">
+        <option>Featured</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+      </select>
       <div class="product-grid">
         <div class="product-card">
-          <img
+          <a href="#siena-modal"> <img
             class="images"
             src="images/siena blazer.jpg"
             alt="A picture of a woman wearing a siena blazer"
-          />
+          />siena modal</a>
           <h2>Siena Blazer</h2>
           <p class="prices">KSh 8,500</p>
           <p class="rating">★★★★★</p>
@@ -118,9 +119,35 @@
           <p class="prices">KSh 10,500</p>
           <p class="rating">★★★★★</p>
           <button>ADD TO CART</button>
-        
         </div>
       </div>
-    </section>
-  </body>
+      <div id="siena-modal">
+        <div class="modal-content">
+          <a href="#">× Close</a>
+          <img
+            class="images"
+            src="images/siena blazer.jpg"
+            alt="woman wearing siena blazer"
+          />
+          <p>
+            A refined warm-ivory blazer designed for effortless, polished
+            everyday styling
+          </p>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+   </section>
+
+<div id="cart-sidebar" class="cart">
+  <h2 class="bag">YOUR BAG</h2>
+  <p>Siena Blazer</p>
+  <p>KSh 8,500</p>
+  <p>Amara Linen Dress</p>
+  <p>KSh 7,200</p>
+  <p>TOTAL: KSh 15,700</p>
+  <button>CHECKOUT</button>
+  <a href="#">× Close</a>
+</div>
+
+</body>
 </html>
