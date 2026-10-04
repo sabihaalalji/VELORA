@@ -107,19 +107,19 @@ button:hover {
   object-fit: cover;
 }
 .product-card {
-  background-color: #e8d3ba;
+  background-color: var(--card);
   color: #4a2c24;
   border-color: #c9ad91;
   border-radius: 6px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 .prices {
-  color: #4a2c24;
+  color: var(--text);
   text-align: center;
   font-size: 18px;
 }
 .rating {
-  color: #6b1e2e;
+  color: var(--accent);
   text-align: center;
   letter-spacing: 2px;
 }
@@ -207,4 +207,12 @@ select {
   gap: 15px;
   padding: 20px;
 }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2b211d;
+    --card: #3a2c26;
+    --text: #f5ebdd;
+    --border: #6b5145;
+  }
 }
